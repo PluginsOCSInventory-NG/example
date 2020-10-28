@@ -19,8 +19,8 @@ The following files allow a new extension to be displayed on the web console, cr
 
 These files are required when something is needed from the agent (e.g. reporting of new data), they can be omitted if the extension doesn't require anything from the agent.
 
-* APACHE > Map.pm > idk
-* APACHE > plugin_ex.conf > Apache configuration file for the plugin
+* APACHE > Map.pm > Link file between communication server and database.
+* APACHE > plugin_ex.conf > Require the server to load Map.pm file from plugin
 
 **Misc :** 
 

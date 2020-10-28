@@ -11,9 +11,6 @@ $DATA_MAP{example} = {
    sortBy => 'ID',
    writeDiff => 0,
    cache => 0,
-   fields => {
-        ID => {},
-        HARDWARE_ID => {}
-    }
+   fields => {}
 };
 1;

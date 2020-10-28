@@ -65,6 +65,6 @@
     <hook type="submenu">
         <mainmenuidentifier>ms_extension</mainmenuidentifier>
         <identifier>ms_example</identifier>
-        <translation>KEK</translation>
+        <translation>25633</translation>
     </hook>
 </hookstore>

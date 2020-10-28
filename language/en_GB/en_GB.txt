@@ -1,0 +1,2 @@
+25632 Plugin example
+25633 Menu example
