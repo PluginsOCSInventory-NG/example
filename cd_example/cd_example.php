@@ -52,7 +52,7 @@ $default_fields = $list_fields;
 // select columns for table display
 $sql = prepare_sql_tab($list_fields);
 $sql['SQL']  .= "FROM example WHERE (hardware_id = $systemid)";
-// stores systemid as argument for the SQL request ?
+
 array_push($sql['ARG'], $systemid);
 $tab_options['ARG_SQL'] = $sql['ARG'];
 $tab_options['ARG_SQL_COUNT'] = $systemid;

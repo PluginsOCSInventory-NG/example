@@ -5,18 +5,42 @@
         Add languages if your plugin need to add dedicated translation to it here :
         One <value></value> for each lang
 
-        Available langs :
-        (add from language dir)
+        Available languages :
+        br_BR - Brazilian Portuguese
+        cs_CZ - Czech
+        de_DE - German
+        en_GB - English
+        es_ES - Spanish
+        fr_FR - French
+        it_IT - Italian
+        ja_JP - Japanese
+        nl_NL - Dutch
+        pl_PL - Polish
+        pt_PT - Portuguese
+        ru_RU - Russian
+        si_SI - Sinhalese 
+        tr_TR - Turkish
+        ug_UY - Uighur 
+        uk_UA - Ukrainian
+        zh_CN - Chinese
     -->
     <hook type="lang">
         <value>en_GB</value>
     </hook>
     <!-- 
         This will add a new computer detail entry to show computer related data :
-        identifier : (php file name need to match identifier)
-        translation : 
-        category : (list category)
-        available : need to be the identifier without "cd_"
+        identifier : (php file name needs to match identifier)
+        translation : corresponding translation code for the extension's name
+        category : 
+            accountinfo
+            hardware
+            software
+            network
+            devices
+            config
+            teledeploy
+            other
+        available : needs to be the identifier without "cd_"
     -->
     <hook type="cdentry">
         <identifier>cd_example</identifier>
@@ -26,13 +50,21 @@
     </hook>
     <!-- 
         This node will add a new submenu inside OCS WebUI :
-        mainmenuidentifier :
-        identifier : (list available menus)
-        translation : 
+        mainmenuidentifier : 
+            ms_all_computers
+            ms_inventory
+            ms_teledeploy
+            ms_config
+            ms_regconfig
+            ms_extension
+            ms_logs
+            ms_help
+        identifier : (php file name needs to match identifier)
+        translation : corresponding translation code for the extension's name
     -->
     <hook type="submenu">
         <mainmenuidentifier>ms_extension</mainmenuidentifier>
-        <identifier>ms_officepack</identifier>
-        <translation>23001</translation>
+        <identifier>ms_example</identifier>
+        <translation>KEK</translation>
     </hook>
 </hookstore>
