@@ -1,0 +1,13 @@
+{
+"displayName" : "Plugin Example",
+"author" : ["Léa DROGUET"],
+"contributor" : [],
+"supportedAgent" : ["Unix"],
+"version" : "1",
+"licence" : "GPLv2",
+"description" : 
+    {
+        "fr" : "Un exemple de plugin",
+        "en" : "A plugin example 2"
+    }
+}
