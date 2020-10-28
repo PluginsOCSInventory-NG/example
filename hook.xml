@@ -1,12 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Mandatory first XML node -->
 <hookstore>
+    <!-- 
+        Add languages if your plugin need to add dedicated translation to it here :
+        One <value></value> for each lang
+
+        Available langs :
+        (add from language dir)
+    -->
     <hook type="lang">
         <value>en_GB</value>
     </hook>
+    <!-- 
+        This will add a new computer detail entry to show computer related data :
+        identifier : (php file name need to match identifier)
+        translation : 
+        category : (list category)
+        available : need to be the identifier without "cd_"
+    -->
     <hook type="cdentry">
         <identifier>cd_example</identifier>
         <translation>25632</translation>
         <category>other</category>
         <available>example</available>
+    </hook>
+    <!-- 
+        This node will add a new submenu inside OCS WebUI :
+        mainmenuidentifier :
+        identifier : (list available menus)
+        translation : 
+    -->
+    <hook type="submenu">
+        <mainmenuidentifier>ms_extension</mainmenuidentifier>
+        <identifier>ms_officepack</identifier>
+        <translation>23001</translation>
     </hook>
 </hookstore>
