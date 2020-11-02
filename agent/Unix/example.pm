@@ -78,6 +78,7 @@ sub example_prolog_reader {    #Use this hook to read the answer from OCS server
 sub example_inventory_handler {        #Use this hook to add or modify entries in the inventory XML
     my $self = shift;
     my $logger = $self->{logger};
+    my $common = $self->{context}->{common};
 
     
     my $col1 = 42;
