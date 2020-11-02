@@ -17,6 +17,8 @@ function extension_install_example()
         "CREATE TABLE example (
         ID INTEGER NOT NULL AUTO_INCREMENT, 
         HARDWARE_ID INTEGER NOT NULL,
+        COLUMN_1 INTEGER NOT NULL,
+        COLUMN_2 VARCHAR(255) DEFAULT NULL,
         PRIMARY KEY (ID,HARDWARE_ID)) ENGINE=INNODB;"
     );
 }
