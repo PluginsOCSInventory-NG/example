@@ -32,7 +32,7 @@
         identifier : (php file name needs to match identifier)
         translation : corresponding translation code for the extension's name
         category : 
-            accountinfo
+            admin
             hardware
             software
             network
